@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flowers</title>
+    <!-- Noto Serif Google Font CDN Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Inter Google Font CDN Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome CDN Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Tailwind CDN Link -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Custom Style CSS Link -->
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body class="noto-serif-font">
+    <!-- Header Section Start -->
+    <header>
+      <nav
+        class="flex justify-between items-center max-w-6xl mx-auto mt-[30px]"
+      >
+        <img src="./assets/logo.png" alt="logo" />
+        <div class="flex gap-8 inter-font">
+          <ul class="hidden sm:flex gap-8">
+            <li>
+              <a
+                class="inter-font font-bold leading-[24px] text-[#252432]"
+                href="#"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                class="leading-[24px] text-[#8987A1] hover:text-[#252432] duration-[0.2s]"
+                href="#"
+                >Shop</a
+              >
+            </li>
+            <li>
+              <a
+                class="leading-[24px] text-[#8987A1] hover:text-[#252432] duration-[0.2s]"
+                href="#"
+                >About Us</a
+              >
+            </li>
+          </ul>
+          <a class="leading-[24px] text-[#000000]" href="#"
+            ><i class="fa-solid fa-cart-shopping"></i> Cart ($56)</a
+          >
+        </div>
+      </nav>
+      <section
+        class="banner flex flex-col-reverse gap-2 sm:flex-row items-center max-w-6xl mx-auto mt-[120px]"
+      >
+        <div>
+          <h1 class="text-[#000000] text-[3rem] sm:text-[4rem] font-bold">
+            ALWAYS <span class="text-[#E95A08]">FRESH FLOWERS</span>
+          </h1>
+          <p class="inter-font text-[#00000080] text-[1.375rem] mt-[12px]">
+            At our fresh flower shop, we believe that every bloom tells a story.
+            From the classic elegance of roses to the vibrant charm of exotic
+            flowers, our handpicked arrangements are designed to make every
+            occasion unforgettable.
+          </p>
+        </div>
+        <img style="max-width: 570px" src="./assets/hero-flower.png" alt="" />
+      </section>
+    </header>
+    <!-- Header Section End -->
+
+    <!-- Main Section Start -->
+    <main>
+      <section class="our-plants max-w-6xl mx-auto mt-[120px]">
+        <h2 class="text-[#000000] text-[3rem] font-bold mb-[1rem] text-center">
+          <span class="text-[#E95A08]">Our</span> Plants
+        </h2>
+        <p
+          class="plants-description inter-font text-[#00000080] text-[1.375rem] mb-[50px] text-center"
+        >
+          Flowers have always been a symbol of love, beauty, and celebration.
+          Whether you’re expressing heartfelt emotions, brightening up your
+          home, or surprising someone special, fresh flowers bring a touch of
+          nature’s magic into every moment.
+        </p>
+        <div
+          class="card-container grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-x-[20px] gap-y-[30px]"
+        >
+          <div class="card text-center">
+            <img src="./flower/flower-1.jpg" alt="" />
+            <p
+              class="card-title text-[#111111] text-[1.375rem] leading-[150%] font-medium mt-[30px]"
+            >
+              Cardinal Flower
+            </p>
+            <h4
+              class="text-[#111111] text-[1.375rem] leading-[150%] font-bold mt-[20px]"
+            >
+              22 USD
+            </h4>
+            <div class="bg-[#E95A08] py-[10px] text-[#FFFFFF] mt-[30px]">
+              <button>ADD TO CART</button>
+            </div>
+          </div>
+          <div class="card text-center">
+            <img src="./flower/flower-2.jpg" alt="" />
+            <p
+              class="card-title text-[#111111] text-[1.375rem] leading-[150%] font-medium mt-[30px]"
+            >
+              Red Rose
+            </p>
+            <h4
+              class="text-[#111111] text-[1.375rem] leading-[150%] font-bold mt-[20px]"
+            >
+              25 USD
+            </h4>
+            <div class="bg-[#E95A08] py-[10px] text-[#FFFFFF] mt-[30px]">
+              <button>ADD TO CART</button>
+            </div>
+          </div>
+          <div class="card text-center">
+            <img src="./flower/flower-3.jpg" alt="" />
+            <p
+              class="card-title text-[#111111] text-[1.375rem] leading-[150%] font-medium mt-[30px]"
+            >
+              Purple Coneflower
+            </p>
+            <h4
+              class="text-[#111111] text-[1.375rem] leading-[150%] font-bold mt-[20px]"
+            >
+              15 USD
+            </h4>
+            <div class="bg-[#E95A08] py-[10px] text-[#FFFFFF] mt-[30px]">
+              <button>ADD TO CART</button>
+            </div>
+          </div>
+          <div class="card text-center">
+            <img src="./flower/flower-4.jpg" alt="" />
+            <p
+              class="card-title text-[#111111] text-[1.375rem] leading-[150%] font-medium mt-[30px]"
+            >
+              Wild Bergamot
+            </p>
+            <h4
+              class="text-[#111111] text-[1.375rem] leading-[150%] font-bold mt-[20px]"
+            >
+              30 USD
+            </h4>
+            <div class="bg-[#E95A08] py-[10px] text-[#FFFFFF] mt-[30px]">
+              <button>ADD TO CART</button>
+            </div>
+          </div>
+          <div class="card text-center">
+            <img src="./flower/flower-5.jpg" alt="" />
+            <p
+              class="card-title text-[#111111] text-[1.375rem] leading-[150%] font-medium mt-[30px]"
+            >
+              Black-eyed Susan
+            </p>
+            <h4
+              class="text-[#111111] text-[1.375rem] leading-[150%] font-bold mt-[20px]"
+            >
+              20 USD
+            </h4>
+            <div class="bg-[#E95A08] py-[10px] text-[#FFFFFF] mt-[30px]">
+              <button>ADD TO CART</button>
+            </div>
+          </div>
+          <div class="card text-center">
+            <img src="./flower/flower-6.jpg" alt="" />
+            <p
+              class="card-title text-[#111111] text-[1.375rem] leading-[150%] font-medium mt-[30px]"
+            >
+              Columbine
+            </p>
+            <h4
+              class="text-[#111111] text-[1.375rem] leading-[150%] font-bold mt-[20px]"
+            >
+              18 USD
+            </h4>
+            <div class="bg-[#E95A08] py-[10px] text-[#FFFFFF] mt-[30px]">
+              <button>ADD TO CART</button>
+            </div>
+          </div>
+          <div class="card text-center">
+            <img src="./flower/flower-7.jpg" alt="" />
+            <p
+              class="card-title text-[#111111] text-[1.375rem] leading-[150%] font-medium mt-[30px]"
+            >
+              Rose
+            </p>
+            <h4
+              class="text-[#111111] text-[1.375rem] leading-[150%] font-bold mt-[20px]"
+            >
+              20 USD
+            </h4>
+            <div class="bg-[#E95A08] py-[10px] text-[#FFFFFF] mt-[30px]">
+              <button>ADD TO CART</button>
+            </div>
+          </div>
+          <div class="card text-center">
+            <img src="./flower/flower-8.jpg" alt="" />
+            <p
+              class="card-title text-[#111111] text-[1.375rem] leading-[150%] font-medium mt-[30px]"
+            >
+              Pink Rose
+            </p>
+            <h4
+              class="text-[#111111] text-[1.375rem] leading-[150%] font-bold mt-[20px]"
+            >
+              20 USD
+            </h4>
+            <div class="bg-[#E95A08] py-[10px] text-[#FFFFFF] mt-[30px]">
+              <button>ADD TO CART</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Main Section End -->
+
+    <!-- Footer Section Start -->
+    <footer></footer>
+    <!-- Footer Section End -->
+  </body>
+</html>
