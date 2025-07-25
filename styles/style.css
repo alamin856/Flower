@@ -25,26 +25,6 @@
   filter: drop-shadow(-4px 10px 4px #000000);
 }
 
-/* Latest Deal Section Styles */
-.img-1 {
-  background-image: url("../assets/deal-bloom.png");
-  width: 370px;
-  height: 200px;
-  background-repeat: no-repeat;
-}
-.img-2 {
-  background-image: url("../assets/deal-ana.png");
-  width: 370px;
-  height: 200px;
-  background-repeat: no-repeat;
-}
-.img-3 {
-  background-image: url("../assets/deal-zabo.png");
-  width: 370px;
-  height: 200px;
-  background-repeat: no-repeat;
-}
-
 /* Join Section Styles */
 .join {
   background-image: url("../assets/news-letter-bg.png");
