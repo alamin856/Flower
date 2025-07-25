@@ -319,9 +319,7 @@
       </section>
 
       <!-- Latest  Deals Section -->
-      <section
-        class="latest-deals max-w-6xl mx-auto mt-[120px] px-[16px] sm:px-[0]"
-      >
+      <section class="max-w-6xl mx-auto mt-[120px] px-[16px] sm:px-[0]">
         <h2
           class="deals-title text-[3rem] font-bold text-[#000000] text-center"
         >
@@ -334,23 +332,36 @@
           shop. From classic roses to exotic blooms, we offer a wide variety of
           fresh.
         </p>
-        <div class="deals-container grid gap-[24px]">
-          <div class="deal deal-1 grid grid-rows-2 gap-[24px]">
-            <div class="img-1">
-              <h3>60% Off | Bloom Plant</h3>
-              <button>Shop Now</button>
-            </div>
-            <div class="img-2">
-              <h3>30% Off | Ana Plant</h3>
-              <button>Shop Now</button>
+        <div class="grid grid-cols-3 grid-rows-2 gap-[28px] grid-flow-col">
+          <div
+            class="relative h-[210px] rounded-[14px] grid items-center bg-[url(./assets/deal-bloom.png)] bg-cover bg-center"
+          >
+            <div class="absolute inset-0 bg-[#00000080] rounded-[14px]"></div>
+            <div class="relative z-10 text-[#ffffff] text-center">
+              <h3 class="text-xl mb-[26px]">60% Off | Bloom Plant</h3>
+              <p><a class="underline" href="#">Shop Now</a></p>
             </div>
           </div>
-          <div class="deal deal-2">
-            <div class="img-3">
-              <h3 class="text-[1.25rem] font-bold text-[#FFFFFF]">
-                25% Off | Zabo Plant
-              </h3>
-              <button>Shop Now</button>
+          <div
+            class="relative h-[210px] rounded-[14px] grid items-center bg-[url(./assets/deal-ana.png)] bg-cover bg-center"
+          >
+            <div class="absolute inset-0 bg-[#00000080] rounded-[14px]"></div>
+            <div class="relative z-10 text-white text-center">
+              <h3 class="text-xl mb-[26px]">30% Off | Ana Plant</h3>
+              <p><a class="underline" href="#">Shop Now</a></p>
+            </div>
+          </div>
+          <div class="col-span-2 row-span-2 rounded-[24px] grid items-center">
+            <div
+              class="relative h-[445px] rounded-[14px] grid items-center bg-[url(./assets/deal-zabo.png)] bg-cover bg-center"
+            >
+              <div class="absolute inset-0 bg-[#00000080] rounded-[14px]"></div>
+              <div class="relative z-10 text-white text-center">
+                <h3 class="noto-serif-regular text-[2rem] mb-[26px]">
+                  25% Off | Zabo Plant
+                </h3>
+                <p><a class="underline text-2xl" href="#">Shop Now</a></p>
+              </div>
             </div>
           </div>
         </div>
