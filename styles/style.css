@@ -1,9 +1,3 @@
-/* * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-} */
-
 /* Shared Styles */
 
 .noto-serif-font {
@@ -17,17 +11,38 @@
   font-optical-sizing: auto;
   font-style: normal;
 }
-/* .card img {
-  max-width: 300px;
-  max-height: 320px;
-} */
-/* Nav Styles Start */
-/* header nav {
-  max-width: 1140px;
-  margin: 0 auto;
-  margin-top: 30px;
+.card:hover {
+  box-shadow: 4px 6px 4px 4px #00000040;
 }
-header .banner {
-  max-width: 1140px;
-  margin: 0 auto;
-} */
+.card .btn:hover {
+  background-color: #000000;
+  cursor: pointer;
+}
+.badge {
+  filter: drop-shadow(-4px 10px 4px #000000);
+}
+.img-1 {
+  background-image: url("../assets/deal-bloom.png");
+  width: 370px;
+  height: 200px;
+  background-repeat: no-repeat;
+}
+.img-2 {
+  background-image: url("../assets/deal-ana.png");
+  width: 370px;
+  height: 200px;
+  background-repeat: no-repeat;
+}
+.img-3 {
+  background-image: url("../assets/deal-zabo.png");
+  width: 370px;
+  height: 200px;
+  background-repeat: no-repeat;
+}
+.join {
+  background-image: url("../assets/news-letter-bg.png");
+  background-size: cover;
+}
+footer ul a:hover {
+  color: #000000;
+}

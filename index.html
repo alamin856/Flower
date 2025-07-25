@@ -35,7 +35,8 @@
     <!-- Header Section Start -->
     <header>
       <nav
-        class="flex justify-between items-center max-w-6xl mx-auto mt-[30px]"
+        class="flex justify-between items-center max-w-6xl mx-auto mt-[30px] px-[16px] sm:px-[0]"
+        ;
       >
         <img src="./assets/logo.png" alt="logo" />
         <div class="flex gap-8 inter-font">
@@ -49,14 +50,14 @@
             </li>
             <li>
               <a
-                class="leading-[24px] text-[#8987A1] hover:text-[#252432] duration-[0.2s]"
+                class="leading-[24px] text-[#8987A1] hover:text-[#252432] duration-200"
                 href="#"
                 >Shop</a
               >
             </li>
             <li>
               <a
-                class="leading-[24px] text-[#8987A1] hover:text-[#252432] duration-[0.2s]"
+                class="leading-[24px] text-[#8987A1] hover:text-[#252432] duration-200"
                 href="#"
                 >About Us</a
               >
@@ -68,32 +69,46 @@
         </div>
       </nav>
       <section
-        class="banner flex flex-col-reverse gap-2 sm:flex-row items-center max-w-6xl mx-auto mt-[120px]"
+        class="banner flex flex-col-reverse justify-between items-end max-w-6xl mx-auto sm:flex-row mt-[120px] px-[16px] sm:px-[0]"
       >
-        <div>
+        <div class="max-w-[570px]">
           <h1 class="text-[#000000] text-[3rem] sm:text-[4rem] font-bold">
-            ALWAYS <span class="text-[#E95A08]">FRESH FLOWERS</span>
+            ALWAYS
+            <span class="text-[#E95A08]"
+              >FRESH <br />
+              FLOWERS</span
+            >
           </h1>
-          <p class="inter-font text-[#00000080] text-[1.375rem] mt-[12px]">
-            At our fresh flower shop, we believe that every bloom tells a story.
-            From the classic elegance of roses to the vibrant charm of exotic
-            flowers, our handpicked arrangements are designed to make every
-            occasion unforgettable.
+          <p
+            class="inter-font text-[#00000080] text-[1.375rem] mt-[12px] leading-7"
+          >
+            Experience the charm of our fresh flower shop, offering timeless
+            roses and rare exotic blooms. Discover a vibrant selection of
+            freshly picked flowers, perfect for adding beauty and joy to any
+            occasion.
           </p>
         </div>
-        <img style="max-width: 570px" src="./assets/hero-flower.png" alt="" />
+        <img
+          class="max-w-[570px]"
+          width="100%"
+          src="./assets/hero-flower.png"
+          alt=""
+        />
       </section>
     </header>
     <!-- Header Section End -->
 
     <!-- Main Section Start -->
     <main>
-      <section class="our-plants max-w-6xl mx-auto mt-[120px]">
+      <!-- Our Plants Section -->
+      <section
+        class="our-plants max-w-6xl mx-auto mt-[120px] px-[16px] sm:px-[0]"
+      >
         <h2 class="text-[#000000] text-[3rem] font-bold mb-[1rem] text-center">
           <span class="text-[#E95A08]">Our</span> Plants
         </h2>
         <p
-          class="plants-description inter-font text-[#00000080] text-[1.375rem] mb-[50px] text-center"
+          class="plants-description inter-font text-[#00000080] text-[1.375rem] mb-[50px] text-center max-w-[900px] mx-auto"
         >
           Flowers have always been a symbol of love, beauty, and celebration.
           Whether you’re expressing heartfelt emotions, brightening up your
@@ -103,23 +118,25 @@
         <div
           class="card-container grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-x-[20px] gap-y-[30px]"
         >
-          <div class="card text-center">
+          <div class="card text-center duration-200">
             <img src="./flower/flower-1.jpg" alt="" />
             <p
               class="card-title text-[#111111] text-[1.375rem] leading-[150%] font-medium mt-[30px]"
             >
-              Cardinal Flower
+              Cardinal
             </p>
             <h4
               class="text-[#111111] text-[1.375rem] leading-[150%] font-bold mt-[20px]"
             >
               22 USD
             </h4>
-            <div class="bg-[#E95A08] py-[10px] text-[#FFFFFF] mt-[30px]">
+            <div
+              class="btn bg-[#E95A08] py-[10px] text-[#FFFFFF] mt-[30px] duration-200"
+            >
               <button>ADD TO CART</button>
             </div>
           </div>
-          <div class="card text-center">
+          <div class="card text-center duration-200">
             <img src="./flower/flower-2.jpg" alt="" />
             <p
               class="card-title text-[#111111] text-[1.375rem] leading-[150%] font-medium mt-[30px]"
@@ -131,59 +148,67 @@
             >
               25 USD
             </h4>
-            <div class="bg-[#E95A08] py-[10px] text-[#FFFFFF] mt-[30px]">
+            <div
+              class="btn bg-[#E95A08] py-[10px] text-[#FFFFFF] mt-[30px] duration-200"
+            >
               <button>ADD TO CART</button>
             </div>
           </div>
-          <div class="card text-center">
+          <div class="card text-center duration-200">
             <img src="./flower/flower-3.jpg" alt="" />
             <p
               class="card-title text-[#111111] text-[1.375rem] leading-[150%] font-medium mt-[30px]"
             >
-              Purple Coneflower
+              Coneflower
             </p>
             <h4
               class="text-[#111111] text-[1.375rem] leading-[150%] font-bold mt-[20px]"
             >
               15 USD
             </h4>
-            <div class="bg-[#E95A08] py-[10px] text-[#FFFFFF] mt-[30px]">
+            <div
+              class="btn bg-[#E95A08] py-[10px] text-[#FFFFFF] mt-[30px] duration-200"
+            >
               <button>ADD TO CART</button>
             </div>
           </div>
-          <div class="card text-center">
+          <div class="card text-center duration-200">
             <img src="./flower/flower-4.jpg" alt="" />
             <p
               class="card-title text-[#111111] text-[1.375rem] leading-[150%] font-medium mt-[30px]"
             >
-              Wild Bergamot
+              Bergamot
             </p>
             <h4
               class="text-[#111111] text-[1.375rem] leading-[150%] font-bold mt-[20px]"
             >
               30 USD
             </h4>
-            <div class="bg-[#E95A08] py-[10px] text-[#FFFFFF] mt-[30px]">
+            <div
+              class="btn bg-[#E95A08] py-[10px] text-[#FFFFFF] mt-[30px] duration-200"
+            >
               <button>ADD TO CART</button>
             </div>
           </div>
-          <div class="card text-center">
+          <div class="card text-center duration-200">
             <img src="./flower/flower-5.jpg" alt="" />
             <p
               class="card-title text-[#111111] text-[1.375rem] leading-[150%] font-medium mt-[30px]"
             >
-              Black-eyed Susan
+              Black-eyed
             </p>
             <h4
               class="text-[#111111] text-[1.375rem] leading-[150%] font-bold mt-[20px]"
             >
               20 USD
             </h4>
-            <div class="bg-[#E95A08] py-[10px] text-[#FFFFFF] mt-[30px]">
+            <div
+              class="btn bg-[#E95A08] py-[10px] text-[#FFFFFF] mt-[30px] duration-200"
+            >
               <button>ADD TO CART</button>
             </div>
           </div>
-          <div class="card text-center">
+          <div class="card text-center duration-200">
             <img src="./flower/flower-6.jpg" alt="" />
             <p
               class="card-title text-[#111111] text-[1.375rem] leading-[150%] font-medium mt-[30px]"
@@ -195,11 +220,13 @@
             >
               18 USD
             </h4>
-            <div class="bg-[#E95A08] py-[10px] text-[#FFFFFF] mt-[30px]">
+            <div
+              class="btn bg-[#E95A08] py-[10px] text-[#FFFFFF] mt-[30px] duration-200"
+            >
               <button>ADD TO CART</button>
             </div>
           </div>
-          <div class="card text-center">
+          <div class="card text-center duration-200 sm:hidden md:block">
             <img src="./flower/flower-7.jpg" alt="" />
             <p
               class="card-title text-[#111111] text-[1.375rem] leading-[150%] font-medium mt-[30px]"
@@ -211,11 +238,13 @@
             >
               20 USD
             </h4>
-            <div class="bg-[#E95A08] py-[10px] text-[#FFFFFF] mt-[30px]">
+            <div
+              class="btn bg-[#E95A08] py-[10px] text-[#FFFFFF] mt-[30px] duration-200"
+            >
               <button>ADD TO CART</button>
             </div>
           </div>
-          <div class="card text-center">
+          <div class="card text-center duration-200 sm:hidden md:block">
             <img src="./flower/flower-8.jpg" alt="" />
             <p
               class="card-title text-[#111111] text-[1.375rem] leading-[150%] font-medium mt-[30px]"
@@ -227,9 +256,125 @@
             >
               20 USD
             </h4>
-            <div class="bg-[#E95A08] py-[10px] text-[#FFFFFF] mt-[30px]">
+            <div
+              class="btn bg-[#E95A08] py-[10px] text-[#FFFFFF] mt-[30px] duration-200"
+            >
               <button>ADD TO CART</button>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Plants Lover Section -->
+      <section
+        class="plants-lover max-w-6xl mx-auto mt-[40px] sm:mt-[200px] px-[16px] sm:px-[0]"
+      >
+        <div
+          class="flex flex-col gap-[20px] sm:flex-row sm:gap-[70px] justify-center items-center"
+        >
+          <div class="relative">
+            <div class="w-[540px]">
+              <img width="100%" src="./assets/flower-store.png" alt="" />
+            </div>
+            <img
+              class="badge absolute max-w-[286px] top-[-20%] right-[-20%] hidden sm:block"
+              src="./assets/trusted-badge.png"
+              alt=""
+            />
+          </div>
+          <div class="max-w-[540px]">
+            <h2
+              class="plants-title text-[2rem] sm:text-[3rem] font-bold text-[#000000] leading-16"
+            >
+              Flower & Plants <br / class="hidden sm:block"> Lover
+            </h2>
+            <ul
+              style="list-style: disc; list-style-position: outside"
+              class="pl-[30px]"
+            >
+              <li
+                class="inter-font text-[#00000080] text-[1.375rem] mt-[20px] leading-6"
+              >
+                Embrace the freshness and elegance of our flower shop. From
+                timeless roses to striking exotic blooms, we provide a wide
+                collection of fresh flowers to make your moments unforgettable.
+              </li>
+              <li
+                class="inter-font text-[#00000080] text-[1.375rem] mt-[20px] leading-6"
+              >
+                Step into a world of beauty and fragrance at our fresh flower
+                shop. From beautiful roses to charming exotic blooms, we deliver
+                a wide assortment of fresh flowers for every celebration.
+              </li>
+              <li
+                class="inter-font text-[#00000080] text-[1.375rem] mt-[20px] leading-6"
+              >
+                Awaken your senses with the vibrant beauty of our fresh flower
+                shop. From graceful roses to dazzling exotic blooms, we present
+                a diverse variety of fresh flowers perfect for all occasions.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Latest  Deals Section -->
+      <section
+        class="latest-deals max-w-6xl mx-auto mt-[120px] px-[16px] sm:px-[0]"
+      >
+        <h2
+          class="deals-title text-[3rem] font-bold text-[#000000] text-center"
+        >
+          <span class="text-[#E95A08]">Latest</span> Deals
+        </h2>
+        <p
+          class="deals-description inter-font text-[1.375rem] text-[#00000080] mt-[16px] text-center mb-[120px] max-w-[900px] mx-auto"
+        >
+          Indulge your senses with the beauty and fragrance of our fresh flower
+          shop. From classic roses to exotic blooms, we offer a wide variety of
+          fresh.
+        </p>
+        <div class="deals-container grid gap-[24px]">
+          <div class="deal deal-1 grid grid-rows-2 gap-[24px]">
+            <div class="img-1">
+              <h3>60% Off | Bloom Plant</h3>
+              <button>Shop Now</button>
+            </div>
+            <div class="img-2">
+              <h3>30% Off | Ana Plant</h3>
+              <button>Shop Now</button>
+            </div>
+          </div>
+          <div class="deal deal-2">
+            <div class="img-3">
+              <h3 class="text-[1.25rem] font-bold text-[#FFFFFF]">
+                25% Off | Zabo Plant
+              </h3>
+              <button>Shop Now</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Join Section -->
+      <section class="join mt-[120px]">
+        <div class="py-[100px] ms:py-[200px] text-center">
+          <h2 class="text-[1.5rem] sm:text-[3rem] text-[#ffffff] mb-[20px]">
+            Join the colorful Bunch
+          </h2>
+          <div class="flex max-w-lg sm:max-w-7xl justify-center mx-auto">
+            <input
+              placeholder="Write email"
+              class="inter-font max-w-[50%] sm: w-[100%] bg-[#ffffff] py-[10px] px-[8px] text-[#00000080] focus:text-[#000000] focus:outline-none duration-200"
+              type="email"
+              name="email"
+              id=""
+            />
+            <input
+              class="inter-font bg-[#E95A08] px-[24px] font-semibold text-[#FFFFFF] cursor-pointer hover:text-[#000000] duration-200"
+              type="submit"
+              value="Subscribe"
+            />
           </div>
         </div>
       </section>
@@ -237,7 +382,110 @@
     <!-- Main Section End -->
 
     <!-- Footer Section Start -->
-    <footer></footer>
+    <footer class="py-[50px] max-w-[1440px] mx-auto">
+      <div
+        class="footer-container max-w-6xl mx-auto flex flex-col items gap-[20px] sm:flex-row justify-between sm:gap-x-[100px] px-[16px] sm:px-[0]"
+      >
+        <div>
+          <img src="./assets/logo.png" alt="" />
+          <p
+            class="inter-font mt-[16px] text-[#00000080] text-[1.375rem] max-w-[360px]"
+          >
+            Transform your emotions into beautiful memories with our wide
+            variety of fresh flowers, specially designed to make every moment
+            unforgettable.
+          </p>
+        </div>
+        <ul class="grid grid-col-1 sm:grid-cols-2 sm:gap-x-[100px]">
+          <li class="mb-[32px]">
+            <a
+              class="inter-font text-[#6B7280] leading-[24px] mb-[32px] duration-200"
+              href="#"
+              >Home</a
+            >
+          </li>
+          <li class="mb-[32px]">
+            <a
+              class="inter-font text-[#6B7280] leading-[24px] mb-[32px] duration-200"
+              href="#"
+              >About Us</a
+            >
+          </li>
+          <li class="mb-[32px]">
+            <a
+              class="inter-font text-[#6B7280] leading-[24px] mb-[32px] duration-200"
+              href="#"
+              >Blog</a
+            >
+          </li>
+          <li class="mb-[32px]">
+            <a
+              class="inter-font text-[#6B7280] leading-[24px] mb-[32px] duration-200"
+              href="#"
+              >FAQ</a
+            >
+          </li>
+          <li class="mb-[32px]">
+            <a
+              class="inter-font text-[#6B7280] leading-[24px] mb-[32px] duration-200"
+              href="#"
+              >Contact Us</a
+            >
+          </li>
+          <li class="mb-[32px]">
+            <a
+              class="inter-font text-[#6B7280] leading-[24px] mb-[32px] duration-200"
+              href="#"
+              >Features</a
+            >
+          </li>
+          <li class="mb-[32px]">
+            <a
+              class="inter-font text-[#6B7280] leading-[24px] mb-[32px] duration-200"
+              href="#"
+              >Pricing</a
+            >
+          </li>
+          <li class="mb-[32px]">
+            <a
+              class="inter-font text-[#6B7280] leading-[24px] mb-[32px] duration-200"
+              href="#"
+              >Privacy Policy</a
+            >
+          </li>
+          <li class="mb-[32px]">
+            <a
+              class="inter-font text-[#6B7280] leading-[24px] mb-[32px] duration-200"
+              href="#"
+              >Terms of Service</a
+            >
+          </li>
+          <li class="mb-[32px]">
+            <a
+              class="inter-font text-[#6B7280] leading-[24px] mb-[32px] duration-200"
+              href="#"
+              >Help Center</a
+            >
+          </li>
+        </ul>
+        <div>
+          <div class="icon flex gap-[24px] items-center">
+            <a href="https://www.linkedin.com/" target="_blank"
+              ><img src="./assets/icon-linkedin.png" alt=""
+            /></a>
+            <a href="https://x.com/" target="_blank"
+              ><img src="./assets/icon-twitter.png" alt=""
+            /></a>
+            <a href="https://www.facebook.com/" target="_blank"
+              ><img src="./assets/icon-facebook.png" alt=""
+            /></a>
+            <a href="https://www.youtube.com/" target="_blank"
+              ><img src="./assets/icon-youtube.png" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
     <!-- Footer Section End -->
   </body>
 </html>
